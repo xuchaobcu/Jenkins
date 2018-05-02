@@ -1,0 +1,22 @@
+pipeline {
+    agent any 
+    stages {
+        stage('打包') {
+            steps {
+                echo 'Hello world! This is the stage1 !!!' 
+            }
+        }
+        
+        stage('测试') {
+            steps {
+                echo 'Hello world! This is the stage2 !!!' 
+            }
+        }
+
+        stage('部署') {
+            steps {
+                echo 'Hello world! This is the stage3 !!!' 
+            }
+        }
+    }
+}
